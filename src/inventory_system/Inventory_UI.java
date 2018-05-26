@@ -442,7 +442,7 @@ public class Inventory_UI extends javax.swing.JFrame {
     }
 
     private void jbtnResetActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO 4: Implement Reset Functionality
+        // TODO 4a: Implement Reset Functionality on TextFields
         JTextField clearText = null;
         for (Component component:jPanel3.getComponents()) {
             if (component.getClass().toString().contains("javax.swing.JTextField")) {
@@ -459,6 +459,34 @@ public class Inventory_UI extends javax.swing.JFrame {
                 clearText.setEnabled(false);
             }
         }
+
+        // ==========================================================================
+        // TODO 4b: Implement Reset Functionality on CheckBoxes
+        JCheckBox clearBox = null;
+        for (Component component:jPanel3.getComponents()) {
+            if (component.getClass().toString().contains("javax.swing.JCheckBox")) {
+                clearBox = (JCheckBox) component;
+                clearBox.setSelected(false);
+            }
+        }
+        // ==========================================================================
+        for (Component component:jPanel2.getComponents()) {
+            if (component.getClass().toString().contains("javax.swing.JCheckBox")) {
+                clearBox = (JCheckBox) component;
+                clearBox.setSelected(false);
+            }
+        }
+
+
+
+
+
+
+
+
+
+        // ===========================================================================
+
     }
 
     private void jbtnTotalActionPerformed(java.awt.event.ActionEvent evt) {
