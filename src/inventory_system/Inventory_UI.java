@@ -77,6 +77,14 @@ public class Inventory_UI extends javax.swing.JFrame {
         jbtnExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        // TODO 5a: Add WindowListener
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                formWindowActivated(evt);
+            }
+        });
+
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
@@ -476,17 +484,46 @@ public class Inventory_UI extends javax.swing.JFrame {
                 clearBox.setSelected(false);
             }
         }
-
-
-
-
-
-
-
-
-
         // ===========================================================================
 
+    }
+
+    // TODO 5b: Add Reset Code to the formWindowActivated() method
+    // This causes text fields to be disabled by default.
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {
+        JTextField clearText = null;
+        for (Component component:jPanel3.getComponents()) {
+            if (component.getClass().toString().contains("javax.swing.JTextField")) {
+                clearText = (JTextField)component;
+                clearText.setText("0");
+                clearText.setEnabled(false);
+            }
+        }
+        // ==========================================================================
+        for (Component component:jPanel2.getComponents()) {
+            if (component.getClass().toString().contains("javax.swing.JTextField")) {
+                clearText = (JTextField)component;
+                clearText.setText("0");
+                clearText.setEnabled(false);
+            }
+        }
+
+        // ==========================================================================
+        JCheckBox clearBox = null;
+        for (Component component:jPanel3.getComponents()) {
+            if (component.getClass().toString().contains("javax.swing.JCheckBox")) {
+                clearBox = (JCheckBox) component;
+                clearBox.setSelected(false);
+            }
+        }
+        // ==========================================================================
+        for (Component component:jPanel2.getComponents()) {
+            if (component.getClass().toString().contains("javax.swing.JCheckBox")) {
+                clearBox = (JCheckBox) component;
+                clearBox.setSelected(false);
+            }
+        }
+        // ===========================================================================
     }
 
     private void jbtnTotalActionPerformed(java.awt.event.ActionEvent evt) {
