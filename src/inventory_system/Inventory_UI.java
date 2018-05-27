@@ -1111,7 +1111,50 @@ public class Inventory_UI extends javax.swing.JFrame {
     }
 
     private void jbtnTotalActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+        // TODO 7: Button that calculates the total of items in the inventory:
+
+        // Create the required objects
+        InventoryPrice item_price = new InventoryPrice();
+        TaxCalculator itemTax = new TaxCalculator();
+
+        // Calculation Variables
+        double tax, subTotal, grandTotal;
+
+        // We multiply the actual price of the item by what is entered into the item text field
+        item_price.Rice = item_price.priceRice * Double.parseDouble(jTextFieldRice.getText());
+        item_price.Celery = item_price.priceCelery * Double.parseDouble(jTextFieldCelery.getText());
+        item_price.Carrots= item_price.priceCarrots * Double.parseDouble(jTextFieldCarrots.getText());
+        item_price.Onions= item_price.priceOnions * Double.parseDouble(jTextFieldOnions.getText());
+        item_price.Corriander= item_price.priceCorriander * Double.parseDouble(jTextFieldCorriander.getText());
+
+        item_price.Gin= item_price.priceGin * Double.parseDouble(jTextFieldGin.getText());
+        item_price.Rum= item_price.priceRum * Double.parseDouble(jTextFieldRum.getText());
+        item_price.Wine= item_price.priceWine * Double.parseDouble(jTextFieldWine.getText());
+        item_price.Vodka= item_price.priceVodka * Double.parseDouble(jTextFieldVodka.getText());
+        item_price.Whiskey= item_price.priceWhiskey * Double.parseDouble(jTextFieldWhiskey.getText());
+
+        item_price.Tea= item_price.priceTea * Double.parseDouble(jTextFieldTea.getText());
+        item_price.Cola= item_price.priceCola * Double.parseDouble(jTextFieldCola.getText());
+        item_price.Coffee= item_price.priceCoffee * Double.parseDouble(jTextFieldCoffee.getText());
+        item_price.Oranges= item_price.priceOranges * Double.parseDouble(jTextFieldOranges.getText());
+        item_price.BottleWater= item_price.priceBottleWater * Double.parseDouble(jTextFieldBottleWater.getText());
+
+        item_price.MilkShake= item_price.priceMilkShake * Double.parseDouble(jTextFieldMilkShake.getText());
+        item_price.IceCream= item_price.priceIceCream * Double.parseDouble(jTextFieldIcecream.getText());
+        item_price.Almonds= item_price.priceAlmonds * Double.parseDouble(jTextFieldAlmonds.getText());
+        item_price.Pistachio= item_price.pricePistachio * Double.parseDouble(jTextFieldPistachio.getText());
+        item_price.Chocolate= item_price.priceChocolate * Double.parseDouble(jTextFieldChocolate.getText());
+
+        // Total price minus tax
+        subTotal = item_price.getAmount();
+
+        // Calculate the tax of the subTotal amount
+        tax = itemTax.calculateTax(subTotal);
+
+        // Calculate the Grand total
+        grandTotal = subTotal + tax;
+
+
     }
 
     private void jbtnExitActionPerformed(java.awt.event.ActionEvent evt) {

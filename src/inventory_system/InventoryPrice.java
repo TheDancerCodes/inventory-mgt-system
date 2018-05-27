@@ -36,7 +36,7 @@ public class InventoryPrice {
     public double itemGrandTotal;
 
     // Method to add all the items together.
-    public double GetAmount() {
+    public double getAmount() {
 
         itemTotal1 = Rice + Celery + Carrots + Onions + Corriander;
         itemTotal2 = Gin + Rum + Wine + Vodka + Whiskey;
