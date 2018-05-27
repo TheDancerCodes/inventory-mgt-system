@@ -67,12 +67,12 @@ public class Inventory_UI extends javax.swing.JFrame {
         jCheckBoxWhiskey = new javax.swing.JCheckBox();
         jTextFieldWhiskey = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        jLabelTotal = new javax.swing.JLabel();
+        jTextFieldTotal = new javax.swing.JTextField();
+        jLabelSubTotal = new javax.swing.JLabel();
+        jTextFieldTax = new javax.swing.JTextField();
+        jTextFieldSubTotal = new javax.swing.JTextField();
+        jLabelTax = new javax.swing.JLabel();
         jbtnReset = new javax.swing.JButton();
         jbtnTotal = new javax.swing.JButton();
         jbtnExit = new javax.swing.JButton();
@@ -565,31 +565,31 @@ public class Inventory_UI extends javax.swing.JFrame {
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 8));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jLabel1.setText("Total");
-        jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, -1, -1));
+        jLabelTotal.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jLabelTotal.setText("Total");
+        jPanel4.add(jLabelTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, -1, -1));
 
-        jTextField6.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel4.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, 110, -1));
+        jTextFieldTotal.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel4.add(jTextFieldTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, 110, -1));
 
-        jLabel3.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jLabel3.setText("Subtotal");
-        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, -1, 30));
+        jLabelSubTotal.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jLabelSubTotal.setText("Subtotal");
+        jPanel4.add(jLabelSubTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, -1, 30));
 
-        jTextField10.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldTax.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jTextFieldTax.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
+                jTextFieldTaxActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, 110, -1));
+        jPanel4.add(jTextFieldTax, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, 110, -1));
 
-        jTextField12.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel4.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, 110, -1));
+        jTextFieldSubTotal.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel4.add(jTextFieldSubTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, 110, -1));
 
-        jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jLabel5.setText("Tax");
-        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 30, -1, -1));
+        jLabelTax.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jLabelTax.setText("Tax");
+        jPanel4.add(jLabelTax, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 30, -1, -1));
 
         jbtnReset.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jbtnReset.setText("Reset");
@@ -1029,7 +1029,7 @@ public class Inventory_UI extends javax.swing.JFrame {
         noText.clearText(evt);
     }
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void jTextFieldTaxActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
 
@@ -1118,7 +1118,7 @@ public class Inventory_UI extends javax.swing.JFrame {
         TaxCalculator itemTax = new TaxCalculator();
 
         // Calculation Variables
-        double tax, subTotal, grandTotal;
+        double totalTax, subTotal, grandTotal;
 
         // We multiply the actual price of the item by what is entered into the item text field
         item_price.Rice = item_price.priceRice * Double.parseDouble(jTextFieldRice.getText());
@@ -1149,10 +1149,21 @@ public class Inventory_UI extends javax.swing.JFrame {
         subTotal = item_price.getAmount();
 
         // Calculate the tax of the subTotal amount
-        tax = itemTax.calculateTax(subTotal);
+        totalTax = itemTax.calculateTax(subTotal);
 
         // Calculate the Grand total
-        grandTotal = subTotal + tax;
+        grandTotal = subTotal + totalTax;
+
+
+        // TODO 8: Assign the SubTotal, Tax and GrandTotal amounts to there respective text fields for display.
+        String Tax = String.format("$%.2f", totalTax);
+        jTextFieldTax.setText(Tax);
+
+        String SubTotal = String.format("$%.2f", subTotal);
+        jTextFieldSubTotal.setText(SubTotal);
+
+        String Total = String.format("$%.2f", grandTotal);
+        jTextFieldTotal.setText(Total);
 
 
     }
@@ -1219,17 +1230,17 @@ public class Inventory_UI extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBoxCelery;
     private javax.swing.JCheckBox jCheckBoxCarrots;
     private javax.swing.JCheckBox jCheckBoxOnions;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabelTotal;
+    private javax.swing.JLabel jLabelSubTotal;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabelTax;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JTextField jTextFieldCorriander;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextFieldTax;
+    private javax.swing.JTextField jTextFieldSubTotal;
     private javax.swing.JTextField jTextFieldRice;
     private javax.swing.JTextField jTextFieldCelery;
     private javax.swing.JTextField jTextFieldCarrots;
@@ -1248,7 +1259,7 @@ public class Inventory_UI extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldOranges;
     private javax.swing.JTextField jTextFieldPistachio;
     private javax.swing.JTextField jTextFieldChocolate;
-    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextFieldTotal;
     private javax.swing.JTextField jTextFieldBottleWater;
     private javax.swing.JButton jbtnExit;
     private javax.swing.JButton jbtnReset;
