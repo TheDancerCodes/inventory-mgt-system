@@ -2,6 +2,7 @@ package inventory_system;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public class Inventory_UI extends javax.swing.JFrame {
 
@@ -24,47 +25,47 @@ public class Inventory_UI extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jCheckBox16 = new javax.swing.JCheckBox();
-        jTextField22 = new javax.swing.JTextField();
-        jTextField29 = new javax.swing.JTextField();
-        jCheckBox24 = new javax.swing.JCheckBox();
-        jCheckBox20 = new javax.swing.JCheckBox();
-        jCheckBox19 = new javax.swing.JCheckBox();
-        jTextField26 = new javax.swing.JTextField();
-        jCheckBox21 = new javax.swing.JCheckBox();
-        jCheckBox23 = new javax.swing.JCheckBox();
-        jTextField23 = new javax.swing.JTextField();
-        jCheckBox22 = new javax.swing.JCheckBox();
-        jTextField7 = new javax.swing.JTextField();
-        jCheckBox25 = new javax.swing.JCheckBox();
-        jTextField28 = new javax.swing.JTextField();
-        jTextField30 = new javax.swing.JTextField();
-        jTextField24 = new javax.swing.JTextField();
-        jTextField25 = new javax.swing.JTextField();
-        jCheckBox17 = new javax.swing.JCheckBox();
-        jTextField27 = new javax.swing.JTextField();
-        jCheckBox18 = new javax.swing.JCheckBox();
+        jCheckBoxTea = new javax.swing.JCheckBox();
+        jTextFieldTea = new javax.swing.JTextField();
+        jTextFieldPistachio = new javax.swing.JTextField();
+        jCheckBoxBottleWater = new javax.swing.JCheckBox();
+        jCheckBoxCoffee = new javax.swing.JCheckBox();
+        jCheckBoxIcecream = new javax.swing.JCheckBox();
+        jTextFieldCoffee = new javax.swing.JTextField();
+        jCheckBoxAlmonds = new javax.swing.JCheckBox();
+        jCheckBoxPistachio = new javax.swing.JCheckBox();
+        jTextFieldMilkShake = new javax.swing.JTextField();
+        jCheckBoxOranges = new javax.swing.JCheckBox();
+        jTextFieldBottleWater = new javax.swing.JTextField();
+        jCheckBoxChocolate = new javax.swing.JCheckBox();
+        jTextFieldOranges = new javax.swing.JTextField();
+        jTextFieldChocolate = new javax.swing.JTextField();
+        jTextFieldCola = new javax.swing.JTextField();
+        jTextFieldIcecream = new javax.swing.JTextField();
+        jCheckBoxMilkShake = new javax.swing.JCheckBox();
+        jTextFieldAlmonds = new javax.swing.JTextField();
+        jCheckBoxCola = new javax.swing.JCheckBox();
         jPanel3 = new javax.swing.JPanel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jTextField1 = new javax.swing.JTextField();
-        jCheckBox7 = new javax.swing.JCheckBox();
-        jCheckBox8 = new javax.swing.JCheckBox();
-        jCheckBox9 = new javax.swing.JCheckBox();
-        jCheckBox10 = new javax.swing.JCheckBox();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
-        jCheckBox11 = new javax.swing.JCheckBox();
-        jTextField17 = new javax.swing.JTextField();
-        jCheckBox12 = new javax.swing.JCheckBox();
-        jTextField18 = new javax.swing.JTextField();
-        jCheckBox13 = new javax.swing.JCheckBox();
-        jTextField19 = new javax.swing.JTextField();
-        jCheckBox14 = new javax.swing.JCheckBox();
-        jTextField20 = new javax.swing.JTextField();
-        jCheckBox15 = new javax.swing.JCheckBox();
-        jTextField21 = new javax.swing.JTextField();
+        jchkRice = new javax.swing.JCheckBox();
+        jTextFieldCorriander = new javax.swing.JTextField();
+        jCheckBoxCelery = new javax.swing.JCheckBox();
+        jCheckBoxCarrots = new javax.swing.JCheckBox();
+        jCheckBoxOnions = new javax.swing.JCheckBox();
+        jCheckBoxCorriander = new javax.swing.JCheckBox();
+        jTextFieldRice = new javax.swing.JTextField();
+        jTextFieldCelery = new javax.swing.JTextField();
+        jTextFieldCarrots = new javax.swing.JTextField();
+        jTextFieldOnions = new javax.swing.JTextField();
+        jCheckBoxGin = new javax.swing.JCheckBox();
+        jTextFieldGin = new javax.swing.JTextField();
+        jCheckBoxRum = new javax.swing.JCheckBox();
+        jTextFieldRum = new javax.swing.JTextField();
+        jCheckBoxWine = new javax.swing.JCheckBox();
+        jTextFieldWine = new javax.swing.JTextField();
+        jCheckBoxVodka = new javax.swing.JCheckBox();
+        jTextFieldVodka = new javax.swing.JTextField();
+        jCheckBoxWhiskey = new javax.swing.JCheckBox();
+        jTextFieldWhiskey = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
@@ -116,220 +117,450 @@ public class Inventory_UI extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 1000, -1));
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 4));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jCheckBox16.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox16.setText("Tea");
-        jCheckBox16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox16ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jCheckBox16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
 
-        jTextField22.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel2.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 80, -1));
-
-        jTextField29.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel2.add(jTextField29, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, 80, -1));
-
-        jCheckBox24.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox24.setText("Bottle Water");
-        jPanel2.add(jCheckBox24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, -1));
-
-        jCheckBox20.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox20.setText("Coffee");
-        jCheckBox20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox20ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jCheckBox20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
-
-        jCheckBox19.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox19.setText("Rum");
-        jCheckBox19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox19ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jCheckBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, -1, -1));
-
-        jTextField26.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel2.add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, 80, -1));
-
-        jCheckBox21.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox21.setText("Wine");
-        jCheckBox21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox21ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jCheckBox21, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, -1, -1));
-
-        jCheckBox23.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox23.setText("Vodka");
-        jPanel2.add(jCheckBox23, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, -1, -1));
-
-        jTextField23.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel2.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 80, -1));
-
-        jCheckBox22.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox22.setText("Oranges");
-        jCheckBox22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox22ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jCheckBox22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
-
-        jTextField7.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel2.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, 80, -1));
-
-        jCheckBox25.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox25.setText("Whiskey");
-        jPanel2.add(jCheckBox25, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, -1, -1));
-
-        jTextField28.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel2.add(jTextField28, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 80, -1));
-
-        jTextField30.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel2.add(jTextField30, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, 80, -1));
-
-        jTextField24.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel2.add(jTextField24, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, 80, -1));
-
-        jTextField25.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel2.add(jTextField25, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 80, -1));
-
-        jCheckBox17.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox17.setText("Milk Shake");
-        jCheckBox17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox17ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jCheckBox17, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, -1, -1));
-
-        jTextField27.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel2.add(jTextField27, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, 80, -1));
-
-        jCheckBox18.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox18.setText("Cola");
-        jCheckBox18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox18ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jCheckBox18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
-
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 490, 390));
+        // ========================== \\
+        /* CHECKBOXES & TEXT FIELDS */
+        // ========================== \\
 
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 4));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jCheckBox1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox1.setText("Rice");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+
+        // Rice Checkbox
+        jchkRice.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jchkRice.setText("Rice");
+        jchkRice.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+                jchkRiceActionPerformed(evt);
             }
         });
-        jPanel3.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
+        jPanel3.add(jchkRice, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
 
-        jTextField1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 80, -1));
+        // Rice Text Field
+        jTextFieldRice.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel3.add(jTextFieldRice, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 20, 80, -1));
 
-        jCheckBox7.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox7.setText("Celery");
-        jCheckBox7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox7ActionPerformed(evt);
+        jTextFieldRice.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldRiceKeyTyped(evt);
             }
         });
-        jPanel3.add(jCheckBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
 
-        jCheckBox8.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox8.setText("Carrots");
-        jCheckBox8.addActionListener(new java.awt.event.ActionListener() {
+        // Celery Checkbox
+        jCheckBoxCelery.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxCelery.setText("Celery");
+        jCheckBoxCelery.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox8ActionPerformed(evt);
+                jCheckBoxCeleryActionPerformed(evt);
             }
         });
-        jPanel3.add(jCheckBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
+        jPanel3.add(jCheckBoxCelery, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
 
-        jCheckBox9.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox9.setText("Onions");
-        jPanel3.add(jCheckBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
+        // Celery Text Field
+        jTextFieldCelery.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel3.add(jTextFieldCelery, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 80, -1));
 
-        jCheckBox10.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox10.setText("Corriander");
-        jPanel3.add(jCheckBox10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
-
-        jTextField13.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel3.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 20, 80, -1));
-
-        jTextField14.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel3.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 80, -1));
-
-        jTextField15.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel3.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 80, -1));
-
-        jTextField16.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel3.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 80, -1));
-
-        jCheckBox11.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox11.setText("Gin");
-        jCheckBox11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox11ActionPerformed(evt);
+        jTextFieldCelery.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldCeleryKeyTyped(evt);
             }
         });
-        jPanel3.add(jCheckBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, -1, -1));
 
-        jTextField17.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel3.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 20, 80, -1));
-
-        jCheckBox12.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox12.setText("Rum");
-        jCheckBox12.addActionListener(new java.awt.event.ActionListener() {
+        // Carrots Checkbox
+        jCheckBoxCarrots.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxCarrots.setText("Carrots");
+        jCheckBoxCarrots.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox12ActionPerformed(evt);
+                jCheckBoxCarrotsActionPerformed(evt);
             }
         });
-        jPanel3.add(jCheckBox12, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, -1, -1));
+        jPanel3.add(jCheckBoxCarrots, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
 
-        jTextField18.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel3.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 100, 80, -1));
+        // Carrots Text Field
+        jTextFieldCarrots.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel3.add(jTextFieldCarrots, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 80, -1));
 
-        jCheckBox13.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox13.setText("Wine");
-        jCheckBox13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox13ActionPerformed(evt);
+        jTextFieldCarrots.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldCarrotsKeyTyped(evt);
             }
         });
-        jPanel3.add(jCheckBox13, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 180, -1, -1));
 
-        jTextField19.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel3.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 180, 80, -1));
 
-        jCheckBox14.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox14.setText("Vodka");
-        jPanel3.add(jCheckBox14, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, -1, -1));
+        // Onions Checkbox
+        jCheckBoxOnions.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxOnions.setText("Onions");
+        jCheckBoxOnions.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxOnionsActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jCheckBoxOnions, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
 
-        jTextField20.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel3.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, 80, -1));
+        // Onions Text Field
+        jTextFieldOnions.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel3.add(jTextFieldOnions, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 80, -1));
 
-        jCheckBox15.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jCheckBox15.setText("Whiskey");
-        jPanel3.add(jCheckBox15, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, -1, -1));
+        jTextFieldOnions.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldOnionsKeyTyped(evt);
+            }
+        });
 
-        jTextField21.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jPanel3.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 320, 80, -1));
+
+        // Corriander CheckBox
+        jCheckBoxCorriander.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxCorriander.setText("Corriander");
+        jCheckBoxCorriander.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxCorrianderActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jCheckBoxCorriander, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
+
+
+        // Corriander Text Field
+        jTextFieldCorriander.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel3.add(jTextFieldCorriander, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 80, -1));
+
+        jTextFieldCorriander.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldCorrianderKeyTyped(evt);
+            }
+        });
+
+
+        // Gin Checkbox
+        jCheckBoxGin.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxGin.setText("Gin");
+        jCheckBoxGin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxGinActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jCheckBoxGin, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, -1, -1));
+
+        // Gin Text Field
+        jTextFieldGin.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel3.add(jTextFieldGin, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 20, 80, -1));
+
+        jTextFieldGin.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldGinKeyTyped(evt);
+            }
+        });
+        
+
+        // Rum Checkbox
+        jCheckBoxRum.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxRum.setText("Rum");
+        jCheckBoxRum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxRumActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jCheckBoxRum, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, -1, -1));
+
+        // Rum Text Field
+        jTextFieldRum.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel3.add(jTextFieldRum, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 100, 80, -1));
+
+        jTextFieldRum.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldRumKeyTyped(evt);
+            }
+        });
+
+
+        // Wine Checkbox
+        jCheckBoxWine.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxWine.setText("Wine");
+        jCheckBoxWine.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxWineActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jCheckBoxWine, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 180, -1, -1));
+
+        // Wine Text Field
+        jTextFieldWine.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel3.add(jTextFieldWine, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 180, 80, -1));
+
+        jTextFieldWine.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldWineKeyTyped(evt);
+            }
+        });
+
+
+        // Vodka Checkbox
+        jCheckBoxVodka.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxVodka.setText("Vodka");
+        jCheckBoxVodka.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxVodkaActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jCheckBoxVodka, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, -1, -1));
+
+        // Vodka Text Field
+        jTextFieldVodka.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel3.add(jTextFieldVodka, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, 80, -1));
+
+        jTextFieldVodka.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldVodkaKeyTyped(evt);
+            }
+        });
+
+
+        // Whiskey Checkbox
+        jCheckBoxWhiskey.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxWhiskey.setText("Whiskey");
+        jCheckBoxWhiskey.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxWhiskeyActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jCheckBoxWhiskey, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, -1, -1));
+
+        // Whiskey Text Field
+        jTextFieldWhiskey.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel3.add(jTextFieldWhiskey, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 320, 80, -1));
+
+        jTextFieldWhiskey.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldWhiskeyKeyTyped(evt);
+            }
+        });
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 490, 390));
+
+
+
+
+        // ================================================================================================ //
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 4));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        // Tea Checkbox
+        jCheckBoxTea.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxTea.setText("Tea");
+        jCheckBoxTea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxTeaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jCheckBoxTea, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+
+        // Tea Text Field
+        jTextFieldTea.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel2.add(jTextFieldTea, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 80, -1));
+
+        jTextFieldTea.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldTeaKeyTyped(evt);
+            }
+        });
+
+
+        // Cola Checkbox
+        jCheckBoxCola.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxCola.setText("Cola");
+        jCheckBoxCola.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxColaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jCheckBoxCola, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+
+        // Cola Text Field
+        jTextFieldCola.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel2.add(jTextFieldCola, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, 80, -1));
+
+        jTextFieldCola.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldColaKeyTyped(evt);
+            }
+        });
+
+
+        // Coffee Checkbox
+        jCheckBoxCoffee.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxCoffee.setText("Coffee");
+        jCheckBoxCoffee.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxCoffeeActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jCheckBoxCoffee, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
+
+        // Coffee Text Field
+        jTextFieldCoffee.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel2.add(jTextFieldCoffee, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, 80, -1));
+
+        jTextFieldCoffee.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldCoffeeKeyTyped(evt);
+            }
+        });
+
+
+        // Oranges Checkbox
+        jCheckBoxOranges.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxOranges.setText("Oranges");
+        jCheckBoxOranges.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxOrangesActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jCheckBoxOranges, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
+
+
+        // Oranges Text Field
+        jTextFieldOranges.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel2.add(jTextFieldOranges, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 80, -1));
+
+        jTextFieldOranges.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldOrangesKeyTyped(evt);
+            }
+        });
+
+
+        // Bottle Water Checkbox
+        jCheckBoxBottleWater.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxBottleWater.setText("Bottle Water");
+        jCheckBoxBottleWater.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxBottleWaterActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jCheckBoxBottleWater, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, -1));
+
+        // Bottle Water Text Field
+        jTextFieldBottleWater.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel2.add(jTextFieldBottleWater, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, 80, -1));
+
+        jTextFieldBottleWater.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldBottleWaterKeyTyped(evt);
+            }
+        });
+
+
+        // MilkShake Checkbox
+        jCheckBoxMilkShake.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxMilkShake.setText("Milk Shake");
+        jCheckBoxMilkShake.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxMilkShakeActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jCheckBoxMilkShake, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, -1, -1));
+
+        // MilkShake Text Field
+        jTextFieldMilkShake.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel2.add(jTextFieldMilkShake, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 80, -1));
+
+        jTextFieldMilkShake.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldMilkShakeKeyTyped(evt);
+            }
+        });
+
+
+        // Icecream Checkbox
+        jCheckBoxIcecream.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxIcecream.setText("Icecream");
+        jCheckBoxIcecream.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxIcecreamActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jCheckBoxIcecream, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, -1, -1));
+
+        // Icecream Text Field
+        jTextFieldIcecream.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel2.add(jTextFieldIcecream, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 80, -1));
+
+        jTextFieldIcecream.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldIcecreamKeyTyped(evt);
+            }
+        });
+
+
+        // Almonds Checkbox
+        jCheckBoxAlmonds.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxAlmonds.setText("Almonds");
+        jCheckBoxAlmonds.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxAlmondsActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jCheckBoxAlmonds, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, -1, -1));
+
+
+        // Almonds Text Field
+        jTextFieldAlmonds.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel2.add(jTextFieldAlmonds, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, 80, -1));
+
+        jTextFieldAlmonds.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldAlmondsKeyTyped(evt);
+            }
+        });
+
+
+        // Pistachio Checkbox
+        jCheckBoxPistachio.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxPistachio.setText("Pistachio");
+        jCheckBoxPistachio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxPistachioActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jCheckBoxPistachio, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, -1, -1));
+
+        // Pistachio Text Field
+        jTextFieldPistachio.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel2.add(jTextFieldPistachio, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, 80, -1));
+
+        jTextFieldPistachio.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldPistachioKeyTyped(evt);
+            }
+        });
+
+
+        // Chocolate Checkbox
+        jCheckBoxChocolate.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jCheckBoxChocolate.setText("Chocolate");
+        jCheckBoxChocolate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxChocolateActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jCheckBoxChocolate, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, -1, -1));
+
+
+        // Chocolate Text Field
+        jTextFieldChocolate.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jPanel2.add(jTextFieldChocolate, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, 80, -1));
+
+        jTextFieldChocolate.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldChocolateKeyTyped(evt);
+            }
+        });
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 490, 390));
+
+
+        // =============================================================================== \\
 
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 8));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -392,60 +623,413 @@ public class Inventory_UI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>
 
-    private void jCheckBox8ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
+    private void jchkRiceActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO 6a: Enable the Rice Text field when the checkbox is clicked
+
+        if (jchkRice.isSelected()) {
+            jTextFieldRice.setEnabled(true);
+            jTextFieldRice.setText("");
+            jTextFieldRice.requestFocus();
+        }
+        else {
+            jTextFieldRice.setEnabled(false);
+            jTextFieldRice.setText("0");
+        }
     }
 
+    private void jTextFieldRiceKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxCeleryActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Celery Text field when the checkbox is clicked
+
+        if (jCheckBoxCelery.isSelected()) {
+            jTextFieldCelery.setEnabled(true);
+            jTextFieldCelery.setText("");
+            jTextFieldCelery.requestFocus();
+        }
+        else {
+            jTextFieldCelery.setEnabled(false);
+            jTextFieldCelery.setText("0");
+        }
+    }
+
+    private void jTextFieldCeleryKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxCarrotsActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Carrots Text field when the checkbox is clicked
+
+        if (jCheckBoxCarrots.isSelected()) {
+            jTextFieldCarrots.setEnabled(true);
+            jTextFieldCarrots.setText("");
+            jTextFieldCarrots.requestFocus();
+        }
+        else {
+            jTextFieldCarrots.setEnabled(false);
+            jTextFieldCarrots.setText("0");
+        }
+    }
+
+    private void jTextFieldCarrotsKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+
+    private void jCheckBoxOnionsActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Celery Text field when the checkbox is clicked
+
+        if (jCheckBoxOnions.isSelected()) {
+            jTextFieldOnions.setEnabled(true);
+            jTextFieldOnions.setText("");
+            jTextFieldOnions.requestFocus();
+        }
+        else {
+            jTextFieldOnions.setEnabled(false);
+            jTextFieldOnions.setText("0");
+        }
+    }
+
+    private void jTextFieldOnionsKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxCorrianderActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Corriander Text field when the checkbox is clicked
+
+        if (jCheckBoxCorriander.isSelected()) {
+            jTextFieldCorriander.setEnabled(true);
+            jTextFieldCorriander.setText("");
+            jTextFieldCorriander.requestFocus();
+        }
+        else {
+            jTextFieldCorriander.setEnabled(false);
+            jTextFieldCorriander.setText("0");
+        }
+    }
+
+    private void jTextFieldCorrianderKeyTyped(java.awt.event.KeyEvent evt) {
+        
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+
+    private void jCheckBoxGinActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Gin Text field when the checkbox is clicked
+
+        if (jCheckBoxGin.isSelected()) {
+            jTextFieldGin.setEnabled(true);
+            jTextFieldGin.setText("");
+            jTextFieldGin.requestFocus();
+        }
+        else {
+            jTextFieldGin.setEnabled(false);
+            jTextFieldGin.setText("0");
+        }
+    }
+
+    private void jTextFieldGinKeyTyped(java.awt.event.KeyEvent evt) {
+        
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxRumActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Rum Text field when the checkbox is clicked
+
+        if (jCheckBoxRum.isSelected()) {
+            jTextFieldRum.setEnabled(true);
+            jTextFieldRum.setText("");
+            jTextFieldRum.requestFocus();
+        }
+        else {
+            jTextFieldRum.setEnabled(false);
+            jTextFieldRum.setText("0");
+        }
+    }
+
+    private void jTextFieldRumKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxWineActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Wine Text field when the checkbox is clicked
+
+        if (jCheckBoxWine.isSelected()) {
+            jTextFieldWine.setEnabled(true);
+            jTextFieldWine.setText("");
+            jTextFieldWine.requestFocus();
+        }
+        else {
+            jTextFieldWine.setEnabled(false);
+            jTextFieldWine.setText("0");
+        }
+    }
+
+    private void jTextFieldWineKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxVodkaActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Wine Text field when the checkbox is clicked
+
+        if (jCheckBoxVodka.isSelected()) {
+            jTextFieldVodka.setEnabled(true);
+            jTextFieldVodka.setText("");
+            jTextFieldVodka.requestFocus();
+        }
+        else {
+            jTextFieldVodka.setEnabled(false);
+            jTextFieldVodka.setText("0");
+        }
+    }
+
+    private void jTextFieldVodkaKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+
+    private void jCheckBoxWhiskeyActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Whiskey Text field when the checkbox is clicked
+
+        if (jCheckBoxWhiskey.isSelected()) {
+            jTextFieldWhiskey.setEnabled(true);
+            jTextFieldWhiskey.setText("");
+            jTextFieldWhiskey.requestFocus();
+        }
+        else {
+            jTextFieldWhiskey.setEnabled(false);
+            jTextFieldWhiskey.setText("0");
+        }
+    }
+
+    private void jTextFieldWhiskeyKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+
+    private void jCheckBoxTeaActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Tea Text field when the checkbox is clicked
+
+        if (jCheckBoxTea.isSelected()) {
+            jTextFieldTea.setEnabled(true);
+            jTextFieldTea.setText("");
+            jTextFieldTea.requestFocus();
+        }
+        else {
+            jTextFieldTea.setEnabled(false);
+            jTextFieldTea.setText("0");
+        }
+    }
+
+    private void jTextFieldTeaKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxColaActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Cola Text field when the checkbox is clicked
+
+        if (jCheckBoxCola.isSelected()) {
+            jTextFieldCola.setEnabled(true);
+            jTextFieldCola.setText("");
+            jTextFieldCola.requestFocus();
+        }
+        else {
+            jTextFieldCola.setEnabled(false);
+            jTextFieldCola.setText("0");
+        }
+    }
+
+    private void jTextFieldColaKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxCoffeeActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Coffee Text field when the checkbox is clicked
+
+        if (jCheckBoxCoffee.isSelected()) {
+            jTextFieldCoffee.setEnabled(true);
+            jTextFieldCoffee.setText("");
+            jTextFieldCoffee.requestFocus();
+        }
+        else {
+            jTextFieldCoffee.setEnabled(false);
+            jTextFieldCoffee.setText("0");
+        }
+    }
+
+    private void jTextFieldCoffeeKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxOrangesActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Oranges Text field when the checkbox is clicked
+
+        if (jCheckBoxOranges.isSelected()) {
+            jTextFieldOranges.setEnabled(true);
+            jTextFieldOranges.setText("");
+            jTextFieldOranges.requestFocus();
+        }
+        else {
+            jTextFieldOranges.setEnabled(false);
+            jTextFieldOranges.setText("0");
+        }
+    }
+
+    private void jTextFieldOrangesKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxBottleWaterActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Bottle Water Text field when the checkbox is clicked
+
+        if (jCheckBoxBottleWater.isSelected()) {
+            jTextFieldBottleWater.setEnabled(true);
+            jTextFieldBottleWater.setText("");
+            jTextFieldBottleWater.requestFocus();
+        }
+        else {
+            jTextFieldBottleWater.setEnabled(false);
+            jTextFieldBottleWater.setText("0");
+        }
+    }
+
+    private void jTextFieldBottleWaterKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxMilkShakeActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Milk Shake Text field when the checkbox is clicked
+
+        if (jCheckBoxMilkShake.isSelected()) {
+            jTextFieldMilkShake.setEnabled(true);
+            jTextFieldMilkShake.setText("");
+            jTextFieldMilkShake.requestFocus();
+        }
+        else {
+            jTextFieldMilkShake.setEnabled(false);
+            jTextFieldMilkShake.setText("0");
+        }
+    }
+
+    private void jTextFieldMilkShakeKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxIcecreamActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Vanilla Shake Text field when the checkbox is clicked
+
+        if (jCheckBoxIcecream.isSelected()) {
+            jTextFieldIcecream.setEnabled(true);
+            jTextFieldIcecream.setText("");
+            jTextFieldIcecream.requestFocus();
+        }
+        else {
+            jTextFieldIcecream.setEnabled(false);
+            jTextFieldIcecream.setText("0");
+        }
+    }
+
+    private void jTextFieldIcecreamKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+
+    private void jCheckBoxAlmondsActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Almonds Text field when the checkbox is clicked
+
+        if (jCheckBoxAlmonds.isSelected()) {
+            jTextFieldAlmonds.setEnabled(true);
+            jTextFieldAlmonds.setText("");
+            jTextFieldAlmonds.requestFocus();
+        }
+        else {
+            jTextFieldAlmonds.setEnabled(false);
+            jTextFieldAlmonds.setText("0");
+        }
+    }
+
+    private void jTextFieldAlmondsKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxPistachioActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Pistachio Text field when the checkbox is clicked
+
+        if (jCheckBoxPistachio.isSelected()) {
+            jTextFieldPistachio.setEnabled(true);
+            jTextFieldPistachio.setText("");
+            jTextFieldPistachio.requestFocus();
+        }
+        else {
+            jTextFieldPistachio.setEnabled(false);
+            jTextFieldPistachio.setText("0");
+        }
+    }
+
+    private void jTextFieldPistachioKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
+
+    private void jCheckBoxChocolateActionPerformed(java.awt.event.ActionEvent evt) {
+        // Enable the Chocolate Text field when the checkbox is clicked
+
+        if (jCheckBoxChocolate.isSelected()) {
+            jTextFieldChocolate.setEnabled(true);
+            jTextFieldChocolate.setText("");
+            jTextFieldChocolate.requestFocus();
+        }
+        else {
+            jTextFieldChocolate.setEnabled(false);
+            jTextFieldChocolate.setText("0");
+        }
+    }
+
+    private void jTextFieldChocolateKeyTyped(java.awt.event.KeyEvent evt) {
+
+        TaxCalculator noText = new TaxCalculator();
+        noText.clearText(evt);
+    }
 
     private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void jCheckBox11ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void jCheckBox12ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void jCheckBox13ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void jCheckBox16ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void jCheckBox17ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void jCheckBox18ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void jCheckBox19ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void jCheckBox20ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void jCheckBox21ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void jCheckBox22ActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
 
@@ -572,26 +1156,26 @@ public class Inventory_UI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox10;
-    private javax.swing.JCheckBox jCheckBox11;
-    private javax.swing.JCheckBox jCheckBox12;
-    private javax.swing.JCheckBox jCheckBox13;
-    private javax.swing.JCheckBox jCheckBox14;
-    private javax.swing.JCheckBox jCheckBox15;
-    private javax.swing.JCheckBox jCheckBox16;
-    private javax.swing.JCheckBox jCheckBox17;
-    private javax.swing.JCheckBox jCheckBox18;
-    private javax.swing.JCheckBox jCheckBox19;
-    private javax.swing.JCheckBox jCheckBox20;
-    private javax.swing.JCheckBox jCheckBox21;
-    private javax.swing.JCheckBox jCheckBox22;
-    private javax.swing.JCheckBox jCheckBox23;
-    private javax.swing.JCheckBox jCheckBox24;
-    private javax.swing.JCheckBox jCheckBox25;
-    private javax.swing.JCheckBox jCheckBox7;
-    private javax.swing.JCheckBox jCheckBox8;
-    private javax.swing.JCheckBox jCheckBox9;
+    private javax.swing.JCheckBox jchkRice;
+    private javax.swing.JCheckBox jCheckBoxCorriander;
+    private javax.swing.JCheckBox jCheckBoxGin;
+    private javax.swing.JCheckBox jCheckBoxRum;
+    private javax.swing.JCheckBox jCheckBoxWine;
+    private javax.swing.JCheckBox jCheckBoxVodka;
+    private javax.swing.JCheckBox jCheckBoxWhiskey;
+    private javax.swing.JCheckBox jCheckBoxTea;
+    private javax.swing.JCheckBox jCheckBoxMilkShake;
+    private javax.swing.JCheckBox jCheckBoxCola;
+    private javax.swing.JCheckBox jCheckBoxIcecream;
+    private javax.swing.JCheckBox jCheckBoxCoffee;
+    private javax.swing.JCheckBox jCheckBoxAlmonds;
+    private javax.swing.JCheckBox jCheckBoxOranges;
+    private javax.swing.JCheckBox jCheckBoxPistachio;
+    private javax.swing.JCheckBox jCheckBoxBottleWater;
+    private javax.swing.JCheckBox jCheckBoxChocolate;
+    private javax.swing.JCheckBox jCheckBoxCelery;
+    private javax.swing.JCheckBox jCheckBoxCarrots;
+    private javax.swing.JCheckBox jCheckBoxOnions;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -600,29 +1184,29 @@ public class Inventory_UI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextFieldCorriander;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField27;
-    private javax.swing.JTextField jTextField28;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField30;
+    private javax.swing.JTextField jTextFieldRice;
+    private javax.swing.JTextField jTextFieldCelery;
+    private javax.swing.JTextField jTextFieldCarrots;
+    private javax.swing.JTextField jTextFieldOnions;
+    private javax.swing.JTextField jTextFieldGin;
+    private javax.swing.JTextField jTextFieldRum;
+    private javax.swing.JTextField jTextFieldWine;
+    private javax.swing.JTextField jTextFieldVodka;
+    private javax.swing.JTextField jTextFieldWhiskey;
+    private javax.swing.JTextField jTextFieldTea;
+    private javax.swing.JTextField jTextFieldMilkShake;
+    private javax.swing.JTextField jTextFieldCola;
+    private javax.swing.JTextField jTextFieldIcecream;
+    private javax.swing.JTextField jTextFieldCoffee;
+    private javax.swing.JTextField jTextFieldAlmonds;
+    private javax.swing.JTextField jTextFieldOranges;
+    private javax.swing.JTextField jTextFieldPistachio;
+    private javax.swing.JTextField jTextFieldChocolate;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextFieldBottleWater;
     private javax.swing.JButton jbtnExit;
     private javax.swing.JButton jbtnReset;
     private javax.swing.JButton jbtnTotal;
