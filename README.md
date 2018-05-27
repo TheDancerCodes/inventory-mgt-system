@@ -7,3 +7,7 @@ This is the source code for an Inventory Management System built using Java.
 * Start Intellij IDE
 * Select "Open Project" and select the generated root Project folder
 * Run the project!
+
+## Screenshot
+
+  ![Inventory Mgt System Screenshot](art/inventory-mgt-system.png?raw=true "ScreenShot") 
